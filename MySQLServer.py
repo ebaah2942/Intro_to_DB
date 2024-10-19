@@ -16,8 +16,8 @@ def creat_db():
 
 
 
-    except Exception as e:
-        print(f"Error: {e}")
+    except mysql.connector.Error as err:
+     print(f"Error: {err}")
 
 
     finally:
